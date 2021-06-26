@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
+
+@import "./variable.scss";
+@import "./icons.scss";
+
+@import "./component/welcome.scss";
+@import "./component/title.scss";
+@import "./component/link.scss";
+@import "./component/services.scss";
+@import "./component/outstanding.scss";
+@import "./component/black-full.scss";
+@import "./component/work.scss";
+
+@import "./component/header.scss";
+@import "./component/banner.scss";
+@import "./component/stores.scss";
+@import "./component/app.scss";
+
+html {
+  height: 100%;
+  overflow: visible;
+  width: 100%;
+}
+
+body {
+  color: $primary;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  overflow: visible;
+  width: 100%;
+}
+
+.circle-scroll {
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  bottom: 15%;
+  color: white;
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  height: 65px;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  width: 65px;
+}
+
+.bg--gray {
+  background: #F9F9F9;
+}

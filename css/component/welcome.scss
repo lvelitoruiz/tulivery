@@ -1,0 +1,33 @@
+.welcome {
+  background: #F9F9F9;
+  padding: 100px 0;
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  a {
+    color: #676868;
+    font-size: 14px;
+
+    &::before { 
+      background-color: #676868;
+    }
+  }
+
+  &--redes {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      a {
+        margin-right: 50px;
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.stores {
+  &--categories {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    overflow: auto;
+    padding-bottom: 20px;
+
+    .item {
+      align-items: center;
+      border-radius: 12px;
+      border: 1px solid #DBE2EB; 
+      display: flex;
+      height: 56px;
+      justify-content: center;
+      margin-right: 15px;
+      padding: 0 20px;
+      cursor: pointer;
+
+      span {
+        font-size: 32px;
+        color: #8592AC;
+      }
+
+      p {
+        color: #2D3F64;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        margin: 0;
+        padding-left: 7px;
+        padding-top: 2px;
+        white-space: nowrap;
+      }
+
+      &:hover {
+        background-color: #1BD5EA;
+        border: 1px solid #1BD5EA;
+
+        span,
+        p {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &--item {
+    border: 1px solid #DBE2EB;
+    border-radius: 6px;
+    position: relative;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+    &__banner {
+      width: 100%;
+      height: 168px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    &__logo {
+      border-radius: 50%;
+      border: 4px solid white;
+      height: 48px;
+      left: 9px;
+      position: absolute;
+      top: 142px;
+      width: 48px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+
+      .arrow {
+        color: #1BD5EA;
+        align-self: flex-end;
+      }
+
+      h3 {
+        color: #2D3F64;
+        font-size: 16px;
+        font-weight: 24px;
+        font-weight: 500;
+      }
+
+      .detail {
+        display: flex;
+        align-items: center;
+
+        .open {
+          display: flex;
+          align-items: center;
+          color: #27AE60;
+
+          p {
+            margin: 0;
+            padding-left: 5px;
+            font-size: 12px;
+          }
+        }
+
+        .close {
+          display: flex;
+          align-items: center;
+          color: #8592AC;
+
+          p {
+            margin: 0;
+            padding-left: 5px;
+            font-size: 12px;
+          }
+        }
+      }
+
+      .calendar {
+        display: flex;
+        align-items: center;
+        color: #8592AC;
+        padding-left: 20px;
+        
+        p {
+          margin: 0;
+          padding-left: 5px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  &--link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      span {
+        font-size: 20px;
+      }
+
+      p {
+        padding: 0 5px;
+      }
+    }
+  }
+}
