@@ -1,0 +1,28 @@
+.breadcrumb {
+  align-items: center;
+
+  li {
+    a {
+      color: #2D3F64;
+      font-size: 12px;
+      text-decoration: none;
+      font-weight: 500;
+
+      .ico {
+        padding-right: 5px;
+      }
+    }
+
+    &.active {
+      color: #8592AC;
+      font-size: 12px;
+    }
+  }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  float: left;
+  padding-right: .5rem;
+  color: #6c757d;
+  content: var(--bs-breadcrumb-divider, ">");
+}

@@ -3,18 +3,18 @@
 @import "./variable.scss";
 @import "./icons.scss";
 
-@import "./component/welcome.scss";
-@import "./component/title.scss";
 @import "./component/link.scss";
-@import "./component/services.scss";
-@import "./component/outstanding.scss";
-@import "./component/black-full.scss";
-@import "./component/work.scss";
-
 @import "./component/header.scss";
 @import "./component/banner.scss";
 @import "./component/stores.scss";
 @import "./component/app.scss";
+@import "./component/breadcrumb.scss";
+@import "./component/checkout.scss";
+@import "./component/button.scss";
+@import "./component/list-products.scss";
+@import "./component/form.scss";
+@import "./component/tab.scss";
+@import "./component/list-check.scss";
 
 html {
   height: 100%;

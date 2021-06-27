@@ -1,0 +1,32 @@
+.button {
+  &--primary {
+    background-color: #5393D0;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+
+  &--amount {
+    border: 1px solid #DBE2EB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+
+    button {
+      border: none;
+      background: transparent;
+      color: #8592AC;
+    }
+
+    span {
+      min-width: 20px;
+      text-align: center;
+    }
+  }
+}

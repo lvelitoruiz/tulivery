@@ -1,0 +1,64 @@
+.list-products {
+  .item {
+    border-bottom: 1px solid #DBE2EB;
+    display: flex;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    .img {
+      min-width: 72px;
+      min-height: 72px;
+      border: 1px solid #DBE2EB;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100%;
+      padding-left: 15px;
+      width: 100%;
+
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 0;
+        color: #2D3F64;
+      }
+
+      .detail {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .price {
+          color: #1BD5EA;
+          display: flex;
+          align-items: flex-start;
+
+          .moneda {
+            font-size: 12px;
+          }
+
+          .cantidad {
+            font-size: 18px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

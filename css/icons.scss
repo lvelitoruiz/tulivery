@@ -25,6 +25,39 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-wsp:before {
+  content: "\e913";
+}
+.icon-check:before {
+  content: "\e914";
+}
+.icon-chevron-left:before {
+  content: "\e915";
+}
+.icon-chevron-right:before {
+  content: "\e916";
+}
+.icon-filtro:before {
+  content: "\e917";
+}
+.icon-billetera:before {
+  content: "\e90d";
+}
+.icon-carrito-2:before {
+  content: "\e90e";
+}
+.icon-carrito:before {
+  content: "\e90f";
+}
+.icon-delivery:before {
+  content: "\e910";
+}
+.icon-home:before {
+  content: "\e911";
+}
+.icon-qr:before {
+  content: "\e912";
+}
 .icon-arrow-right:before {
   content: "\e900";
 }
