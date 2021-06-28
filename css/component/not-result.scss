@@ -3,8 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 90px;
+  padding: 40px 10px;
   text-align: center;
+
+  @media (min-width: 768px) { 
+    padding: 100px 90px;
+  }
   
   img {
     width: 104px;

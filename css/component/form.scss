@@ -38,6 +38,12 @@ textarea {
     font-size: 14px;
     color: #2D3F64;
 
+    &::placeholder {
+      font-size: 14px;
+      color: #8592AC;
+      font-weight: 300;
+    }
+
     &:focus {
       outline: none;
     }
