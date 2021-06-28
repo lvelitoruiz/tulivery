@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Tulivery</title>
+  </head>  
+
+  <body>
+    <section>
+      <nav class="header header--checkout">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <a href="#">
+                <img class="d-block" src="./assets/img/logo.png" alt="">
+              </a>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>
+                  <a class="link-2" href="">
+                    <span class="pr-2 icon-user"></span>
+                  </a>
+                </li>
+                <li>
+                  <a class="link-3" href="">
+                    <span class="nro">3</span>
+                    <span class="icon-carrito"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="checkout mt-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#"><span class="ico icon-home"></span><span>Home</span></a></li>
+                <li class="breadcrumb-item"><a href="#"><span class="ico icon-tienda"></span><span>Tiendas</span></a></li>
+                <li class="breadcrumb-item"><a href="#">Restaurante Tanta</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-7 col-lg-5 mb-5">
+            <div class="checkout--accordion">
+              <div class="accordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <div class="circle circle-top">
+                      <img src="./assets/img/item-acordion.svg" alt="">
+                    </div>
+                    <div class="accordion-button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      <span>Resumen de tu pedido</span>
+                    </div>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <div class="checkout--accordion__box">
+                        <h4 class="title">Tus productos</h4>
+                        <div class="list-products">
+                          <div class="item">
+                            <div class="img">
+                              <img src="./assets/img/pollo.png" alt="">
+                            </div>
+                            <div class="info">
+                              <p>Pollo a la brasa</p>
+                              <div class="detail">
+                                <div class="button--amount">
+                                  <button>-</button>
+                                  <span>2</span>
+                                  <button>+</button>
+                                </div>
+                                <div class="price">
+                                  <span class="moneda">s/</span>
+                                  <span class="cantidad">24.50</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="img">
+                              <img src="./assets/img/pollo.png" alt="">
+                            </div>
+                            <div class="info">
+                              <p>Pollo a la brasa</p>
+                              <div class="detail">
+                                <div class="button--amount">
+                                  <button>-</button>
+                                  <span>2</span>
+                                  <button>+</button>
+                                </div>
+                                <div class="price">
+                                  <span class="moneda">s/</span>
+                                  <span class="cantidad">24.50</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="img">
+                              <img src="./assets/img/pollo.png" alt="">
+                            </div>
+                            <div class="info">
+                              <p>Pollo a la brasa</p>
+                              <div class="detail">
+                                <div class="button--amount">
+                                  <button>-</button>
+                                  <span>2</span>
+                                  <button>+</button>
+                                </div>
+                                <div class="price">
+                                  <span class="moneda">s/</span>
+                                  <span class="cantidad">24.50</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <div class="circle">
+                      <img src="./assets/img/item-acordion.svg" alt="">
+                    </div>
+                    <div class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      <span>¿Cómo recibirás tus productos? *</span>
+                    </div>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      <ul class="tab nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="delivery-tab" data-bs-toggle="tab" data-bs-target="#delivery" type="button" role="tab" aria-controls="delivery" aria-selected="true">
+                            <span class="icon-delivery"></span>
+                            <span>Delivery</span>
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="recojo-tab" data-bs-toggle="tab" data-bs-target="#recojo" type="button" role="tab" aria-controls="recojo" aria-selected="false">
+                            <span class="icon-tienda"></span>
+                            <span>Recojo</span>
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="delivery" role="tabpanel" aria-labelledby="delivery-tab">
+                          <div class="checkout--accordion__box">
+                            <h4 class="title">Selecciona tu dirección</h4>
+                            <div>
+                              <form class="list-check">
+                                <div class="form-check mr-3">
+                                  <input checked class="radiobutton" type="radio" name="radio5" id="radio3" value="1">
+                                  <label class="radiobutton-label" for="radio3">
+                                    <img src="./assets/img/map.svg" alt="">
+                                    <span class="text">Avenida Caminos del Inca 463</span>
+                                    <span class="link">Editar</span>
+                                    <img src="./assets/img/check-1.svg" alt="">
+                                  </label>
+                                </div>
+                                <div class="form-check mr-3">
+                                  <input class="radiobutton" type="radio" name="radio5" id="radio4" value="2">
+                                  <label class="radiobutton-label" for="radio4">
+                                    <img src="./assets/img/map.svg" alt="">
+                                    <span class="text">Avenida Los héres 624 San Juan</span>
+                                    <span class="link">Editar</span>
+                                    <img src="./assets/img/check-1.svg" alt="">
+                                  </label>
+                                </div>
+                              </form>
+                              <div>
+                                <a class="link" href="">+ Agregar nueva dirección</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="recojo" role="tabpanel" aria-labelledby="recojo-tab">...</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <div class="circle">
+                      <img src="./assets/img/item-acordion.svg" alt="">
+                    </div>
+                    <div class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      <span>¿Cómo realizarás el pago? *</span>
+                    </div>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <ul class="tab nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="Contra-tab" data-bs-toggle="tab" data-bs-target="#Contra" type="button" role="tab" aria-controls="Contra" aria-selected="true">
+                            <span class="icon-Contra"></span>
+                            <span>Contra entrega</span>
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="yape-tab" data-bs-toggle="tab" data-bs-target="#yape" type="button" role="tab" aria-controls="yape" aria-selected="false">
+                            <span class="icon-tienda"></span>
+                            <span>Con Yape</span>
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="Contra" role="tabpanel" aria-labelledby="Contra-tab">
+                          <div class="checkout--accordion__box">
+                            <h4 class="title">Selecciona tu medio de pago</h4>
+                            <div>
+                              <form class="list-check">
+                                <div class="form-check mr-3">
+                                  <input checked class="radiobutton" type="radio" name="radio2" id="radio1" value="1">
+                                  <label class="radiobutton-label" for="radio1">
+                                    <img src="./assets/img/efectivo.svg" alt="">
+                                    <span class="text">Pagaré con Efectivo</span>
+                                    <img src="./assets/img/check-1.svg" alt="">
+                                  </label>
+                                </div>
+                                <div class="form-check mr-3">
+                                  <input class="radiobutton" type="radio" name="radio2" id="radio2" value="2">
+                                  <label class="radiobutton-label" for="radio2">
+                                    <img src="./assets/img/pos.svg" alt="">
+                                    <span class="text">Pagaré con Tarjeta (A través de POS)</span>
+                                    <img src="./assets/img/check-1.svg" alt="">
+                                  </label>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="yape" role="tabpanel" aria-labelledby="yape-tab">
+                          <div class="checkout--accordion__box">
+                            <h4 class="title">Escanea el código QR</h4>
+                            <div class="box-yape">
+                              <div class="qr">
+                                <img src="./assets/img/qr.png" alt="">
+                              </div>
+                              <div class="info">
+                                <p class="mb-1">Realiza la transferencia por Yape y envía la captura:</p>
+                                <a class="mb-2" href="">
+                                  <span class="icon-wsp"></span>
+                                  <span>WhatsApp</span>
+                                  <span class="icon-chevron-right"></span>
+                                </a>
+                                <p class="m-0"><b>Emilio Ramirez - 947 891 088</b></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <div class="circle">
+                      <img src="./assets/img/item-acordion.svg" alt="">
+                    </div>
+                    <div class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                      <span>¿Quieres darnos alguna indicación?</span>
+                    </div>
+                  </h2>
+                  <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body">
+                      <div class="checkout--accordion__box">
+                        <h4 class="title">Redacta tus indicaciones</h4>
+                        <textarea placeholder="Dejar el pedido en la puerta de mi casa..." class="w-100" name="" id="" cols="6" rows="3"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-5 mb-5">
+            <div class="checkout--summary">
+              <img class="toldo" src="./assets/img/toldo.svg" alt="">
+              <div class="checkout--summary__user">
+                <img src="./assets/img/user.png" alt="">
+                <p>Emilio Ramirez</p>
+              </div>
+              <div class="checkout--summary__info">
+                <div class="title">
+                  <span class="icon-carrito-2"></span>
+                  <p>Detalle de precio</p>
+                </div>
+                <ul class="list">
+                  <li>
+                    <span>Pelota de basquet</span>
+                    <span>S/ 100.00</span>
+                  </li>
+                  <li>
+                    <span>Pelota de futbol</span>
+                    <span>S/ 100.00</span>
+                  </li>
+                  <li>
+                    <span>Raqueta de tennis</span>
+                    <span>S/ 50.00</span>
+                  </li>
+                  <li class="subtotal">
+                    <span>Subtotal</span>
+                    <span>S/ 250.00</span>
+                  </li>
+                  <li>
+                    <span>Costo de envío</span>
+                    <span>S/ 15.00</span>
+                  </li>
+                  <li class="total">
+                    <span>Total</span>
+                    <span>S/ 265.00</span>
+                  </li>
+                </ul>
+              </div>
+              <button class="mt-3 w-100 button--primary">Realizar pedido</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  </body>
+</html>
+</html>
