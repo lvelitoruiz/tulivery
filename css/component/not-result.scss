@@ -1,0 +1,23 @@
+.not-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 90px;
+  text-align: center;
+  
+  img {
+    width: 104px;
+    margin-bottom: 15px;
+  }
+
+  h4 {
+    color: #2D3F64;
+    font-weight: 500;
+  }
+
+  p {
+    color: #8592AC;
+    font-size: 14px;
+  } 
+}

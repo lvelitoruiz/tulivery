@@ -17,3 +17,37 @@ textarea {
     outline: none;
   }
 }
+
+.input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .label {
+    color: #8592AC;
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+
+  input {
+    background: #FFFFFF;
+    border: 1px solid #DBE2EB;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 14px;
+    color: #2D3F64;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .ico {
+    position: absolute;
+    right: 10px;
+    bottom: 13px;
+    cursor: pointer;
+    color: #8592AC;
+  }
+}
