@@ -51,3 +51,48 @@ textarea {
     color: #8592AC;
   }
 }
+
+.switch {
+  position: relative;
+  width: 40px;
+}
+
+.switch-checkbox {
+  display: none;
+}
+
+.switch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  height: 20px;
+  padding: 0;
+  line-height: 20px;
+  border-radius: 20px;
+  background-color: #bfbaba;
+  transition: all 400ms;
+}
+.switch-label:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transform: translate(-22px, 2px);
+  border-radius: 70px;
+  transition: all 400ms ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.switch-checkbox:checked + .switch-label {
+  background-color: #1BD5EA;
+}
+
+.switch-checkbox:checked + .switch-label:before {
+  background-color: white;
+  transform: translate(-3px, 2px);
+}

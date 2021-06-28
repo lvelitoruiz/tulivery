@@ -17,6 +17,8 @@
 @import "./component/list-check.scss";
 @import "./component/profile.scss";
 @import "./component/not-result.scss";
+@import "./component/list-detail.scss";
+@import "./component/pagination.scss";
 
 html {
   height: 100%;
@@ -50,4 +52,8 @@ body {
 
 .bg--gray {
   background: #F9F9F9;
+}
+
+.text-right {
+  text-align: right;
 }

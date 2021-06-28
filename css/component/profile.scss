@@ -62,5 +62,18 @@
         padding-left: 5px;
       }
     }   
+
+    &--notification {
+      border-bottom: 1px solid #DBE2EB;
+      display: flex;
+      align-items: center;
+      padding-bottom: 10px;
+      justify-content: space-between;
+      
+      p {
+        font-weight: 300;
+        margin: 0;
+      }
+    }
   }
 }

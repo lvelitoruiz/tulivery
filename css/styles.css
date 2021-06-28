@@ -124,12 +124,18 @@
   font-weight: 500;
   text-decoration: none;
 }
+.link:hover {
+  color: #1393a1;
+}
 
 .link-2 {
   color: #2D3F64;
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
+}
+.link-2:hover {
+  color: #1c283f;
 }
 
 .header {
@@ -604,6 +610,10 @@
   border-radius: 4px;
   text-decoration: none;
 }
+.button--primary:hover {
+  color: white;
+  background-color: #3b6b97;
+}
 .button--amount {
   border: 1px solid #DBE2EB;
   box-sizing: border-box;
@@ -722,6 +732,52 @@ textarea:focus {
   bottom: 13px;
   cursor: pointer;
   color: #8592AC;
+}
+
+.switch {
+  position: relative;
+  width: 40px;
+}
+
+.switch-checkbox {
+  display: none;
+}
+
+.switch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  height: 20px;
+  padding: 0;
+  line-height: 20px;
+  border-radius: 20px;
+  background-color: #bfbaba;
+  transition: all 400ms;
+}
+
+.switch-label:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transform: translate(-22px, 2px);
+  border-radius: 70px;
+  transition: all 400ms ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.switch-checkbox:checked + .switch-label {
+  background-color: #1BD5EA;
+}
+
+.switch-checkbox:checked + .switch-label:before {
+  background-color: white;
+  transform: translate(-3px, 2px);
 }
 
 .tab {
@@ -911,6 +967,17 @@ input.radiobutton:checked + label.radiobutton-label:after {
   margin-bottom: 0;
   padding-left: 5px;
 }
+.profile__box--notification {
+  border-bottom: 1px solid #DBE2EB;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+.profile__box--notification p {
+  font-weight: 300;
+  margin: 0;
+}
 
 .not-result {
   display: flex;
@@ -931,6 +998,199 @@ input.radiobutton:checked + label.radiobutton-label:after {
 .not-result p {
   color: #8592AC;
   font-size: 14px;
+}
+
+.list-detail .item {
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #DBE2EB;
+  border-left: 6px solid #8592AC;
+  margin-bottom: 15px;
+  padding: 12px;
+}
+.list-detail .item--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.list-detail .item--header span {
+  color: #1BD5EA;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  padding-left: 10px;
+}
+.list-detail .item--header a {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.list-detail .item--header a .ico {
+  font-size: 12px;
+}
+.list-detail .item--header a span {
+  color: #2D3F64;
+}
+.list-detail .item--body {
+  display: flex;
+  align-items: center;
+}
+.list-detail .item--body span {
+  font-weight: 500;
+}
+.list-detail .item--body .nro {
+  color: #8592AC;
+  padding-right: 25px;
+}
+.list-detail .item--footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-detail .item--footer .date {
+  display: flex;
+  align-items: center;
+}
+.list-detail .item--footer .date-item {
+  padding-right: 15px;
+  font-size: 12px;
+  color: #8592AC;
+}
+.list-detail .item--footer .price {
+  color: #1BD5EA;
+  display: flex;
+  align-items: flex-start;
+}
+.list-detail .item--footer .price .moneda  {
+  font-size: 12px;
+}
+.list-detail .item--footer .price .cantidad {
+  font-size: 18px;
+  font-weight: 600;
+}
+.list-detail__direction .item--header span {
+  font-size: 16px;
+  color: #2D3F64;
+  font-weight: 500;
+}
+.list-detail__direction .item--body {
+  margin-bottom: 4px;
+}
+.list-detail__direction .item--footer .date-item {
+  font-size: 14px;
+}
+.list-detail__direction .item--footer .link {
+  font-size: 16px;
+}
+.list-detail--summary .item {
+  border: 1px solid #DBE2EB;
+  border-top: 6px solid #8592AC;
+  border-left: 1px solid #DBE2EB;
+}
+.list-detail--summary .item--footer {
+  border-bottom: 1px solid #DBE2EB;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.list-detail--summary .item--summary {
+  border-bottom: 1px solid #DBE2EB;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+.list-detail--summary .item--summary .title {
+  display: flex;
+  align-items: center;
+  color: #2D3F64;
+  margin-bottom: 15px;
+}
+.list-detail--summary .item--summary .title span {
+  font-size: 20px;
+}
+.list-detail--summary .item--summary .title p {
+  font-size: 14px;
+  margin: 0;
+  padding-left: 5px;
+  font-weight: 600;
+}
+.list-detail--summary .item--summary .list {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+.list-detail--summary .item--summary .list li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+  color: #2D3F64;
+  margin-bottom: 10px;
+}
+.list-detail--summary .item--summary .list li.total {
+  font-weight: 600;
+}
+.list-detail--summary .item--status .list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+.list-detail--summary .item--status .list::after {
+  content: "";
+  background-image: url("../assets/img/line.svg");
+  position: absolute;
+  width: 1px;
+  height: 50px;
+  top: 34px;
+  left: 11px;
+}
+.list-detail--summary .item--status .list:last-child::after {
+  display: none;
+}
+.list-detail--summary .item--status .list .img {
+  margin: 0 15px;
+  width: 48px;
+}
+.list-detail--summary .item--status .list p {
+  font-size: 14px;
+  color: #2D3F64;
+}
+.list-detail--summary .item--status .list.disabled p {
+  font-size: 14px;
+  color: #8592AC;
+}
+.list-detail--summary .item--status .list .nro {
+  position: relative;
+}
+
+.pagination {
+  padding-top: 10px;
+  align-items: center;
+}
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link {
+  border: none;
+  font-size: 14px;
+  background-color: transparent;
+  color: #2D3F64;
+}
+.pagination .page-link {
+  margin: 0 10px;
+  background: white;
+  font-size: 12px;
+  font-weight: 600;
+  color: #8592AC;
+  border: 1px solid #DBE2EB;
+  border-radius: 4px;
+}
+.pagination .page-link:focus {
+  box-shadow: none;
+}
+.pagination .page-link.active {
+  background: #1BD5EA;
+  border: 1px solid #1BD5EA;
+  color: white;
 }
 
 html {
@@ -965,6 +1225,10 @@ body {
 
 .bg--gray {
   background: #F9F9F9;
+}
+
+.text-right {
+  text-align: right;
 }
 
 /*# sourceMappingURL=styles.css.map */

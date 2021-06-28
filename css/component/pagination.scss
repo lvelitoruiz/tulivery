@@ -1,0 +1,32 @@
+.pagination {
+  padding-top: 10px;
+  align-items: center;
+
+  .page-item:first-child .page-link,
+  .page-item:last-child .page-link {
+    border: none;
+    font-size: 14px;
+    background-color: transparent;
+    color: #2D3F64;
+  }
+
+  .page-link {
+    margin: 0 10px;
+    background: white;
+    font-size: 12px;
+    font-weight: 600;
+    color: #8592AC;
+    border: 1px solid #DBE2EB;
+    border-radius: 4px;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &.active {
+      background: #1BD5EA;
+      border: 1px solid #1BD5EA;
+      color: white;
+    }
+  }
+}
