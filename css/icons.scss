@@ -25,6 +25,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-sms:before {
+  content: "\e91c";
+}
+.icon-time:before {
+  content: "\e91d";
+}
+.icon-edit:before {
+  content: "\e918";
+}
+.icon-fb:before {
+  content: "\e919";
+}
+.icon-ojo:before {
+  content: "\e91a";
+}
+.icon-phone:before {
+  content: "\e91b";
+}
 .icon-wsp:before {
   content: "\e913";
 }

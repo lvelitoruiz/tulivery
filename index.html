@@ -27,10 +27,68 @@
                   </a>
                 </li>
                 <li>
-                  <a class="link-2" href="">
+                  <a class="link-2" data-bs-toggle="modal" data-bs-target="#modalLogin">
                     <span class="pr-2 icon-user"></span>
-                    <p class="m-0">Incia sesión</p>
+                    <p class="m-0">Inicia sesión</p>
                   </a>
+                  <!-- Modal login-->
+                  <div class="modal modal--login fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <div class="modal--login__header">
+                            <img src="./assets/img/user.png" alt="">
+                            <span>¡Hola!</span>
+                          </div>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p class="text-center">Inicia sesión para continuar con tus compras.</p>
+                          <form action="">
+                            <div class="mb-3">
+                              <div class="input">
+                                <span class="label">Correo electrónico</span>
+                                <input placeholder="Escribe tu correo" type="text">
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <div class="input">
+                                <span class="label">Contraseña</span>
+                                <input placeholder="Escribe tu contraseña" type="password">
+                                <span class="ico icon-ojo"></span>
+                              </div>
+                            </div>
+                            <div class="password">
+                              <p>¿Olvidaste tu contraseña? <a class="link" href="">Recupérala aquí</a></p>
+                            </div>
+                            <div class="mb-3">
+                              <button class="w-100 button--primary text-center">Iniciar sesión</button>
+                            </div>
+                            <div class="mb-3">
+                              <button class="w-100 button--secondary text-center">Registrarme</button>
+                            </div>
+                            <div class="redes text-center pt-3">
+                              <p>ó ingresa con</p>
+                              <div class="row">
+                                <div class="col-6 mb-4">
+                                  <button class="button--blue w-100">
+                                    <span class="ico icon-fb"></span>
+                                    <span>Facebook</span>
+                                  </button>
+                                </div>
+                                <div class="col-6 mb-4">
+                                  <button class="button--white w-100">
+                                    <span class="ico icon-phone"></span>
+                                    <span>Celular</span>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -241,6 +299,371 @@
                 <a href="">
                   <img src="./assets/img/google-play.png" alt="">
                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="row">
+        <div class="col-md-3 mb-5">
+          <a class="link-2" data-bs-toggle="modal" data-bs-target="#modalPhone">
+            <p class="m-0">LOGIN CON CELULAR</p>
+          </a>
+          <!-- Modal login-->
+          <div class="modal modal--login fade" id="modalPhone" tabindex="-1" aria-labelledby="modalPhoneLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="modal--login__back">
+                    <a class="link-2" href="">
+                      <span class="icon-chevron-left"></span>
+                      <span>VOLVER</span>
+                    </a>
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="title-modal mb-3">
+                    <img src="./assets/img/phone.png" alt="">
+                    <p>Accede con tu celular</p>
+                  </div>
+                  <p>Accede a Tulivery con tu número de celular y continua con tus compras.</p>
+                  <form action="">
+                    <div class="mb-5">
+                      <div class="input">
+                        <span class="label">Número de celular</span>
+                        <input placeholder="Escribe tu número de celular" type="text">
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <button class="w-100 button--primary text-center">Enviar SMS</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-5">
+          <a class="link-2" data-bs-toggle="modal" data-bs-target="#modalCodePhone">
+            <p class="m-0">LOGIN CON CELULAR 2</p>
+          </a>
+          <!-- Modal login-->
+          <div class="modal modal--login fade" id="modalCodePhone" tabindex="-1" aria-labelledby="modalCodePhoneLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="title-modal mb-3">
+                    <img src="./assets/img/phone.png" alt="">
+                    <p>Código enviado</p>
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Ingresa el código de verificación enviado por SMS al número <strong>947891088.</strong></p>
+                  <div class="mb-3 time">
+                    <span class="ico icon-time"></span>
+                    <span>Tiempo válido: <strong>00:53</strong></span>
+                  </div>
+                  <form action="">
+                    <div class="mb-5">
+                      <div class="input">
+                        <span class="label">Código de verificación</span>
+                        <input placeholder="Ingresa el código" type="text">
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <button class="w-100 button--primary text-center">Confirmar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-5">
+          <a class="link-2" data-bs-toggle="modal" data-bs-target="#modalCodePhone2">
+            <p class="m-0">LOGIN CON CELULAR 3</p>
+          </a>
+          <!-- Modal login-->
+          <div class="modal modal--login fade" id="modalCodePhone2" tabindex="-1" aria-labelledby="modalCodePhone2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="title-modal mb-3">
+                    <img src="./assets/img/phone.png" alt="">
+                    <p>Código enviado</p>
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Ingresa el código de verificación enviado por SMS al número <strong>947891088.</strong></p>
+                  <div class="password">
+                    <p>¿No recibiste el código? <a class="link" href="">Reenviar SMS</a></p>
+                  </div>
+                  <form action="">
+                    <div class="mb-5">
+                      <div class="input">
+                        <span class="label">Código de verificación</span>
+                        <input placeholder="Ingresa el código" type="text">
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <button class="w-100 button--primary text-center">Confirmar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-5">
+          <a class="link-2" data-bs-toggle="modal" data-bs-target="#modalRegister">
+            <p class="m-0">REGISTRO</p>
+          </a>
+          <!-- Modal login-->
+          <div class="modal modal--login fade" id="modalRegister" tabindex="-1" aria-labelledby="modalRegisterLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="modal--login__back">
+                    <a class="link-2" href="">
+                      <span class="icon-chevron-left"></span>
+                      <span>VOLVER</span>
+                    </a>
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="title-modal mb-3">
+                    <img src="./assets/img/user.png" alt="">
+                    <p>Regístrate y accede</p>
+                  </div>
+                  <form action="">
+                    <div class="mb-3">
+                      <div class="input">
+                        <span class="label">Nombre</span>
+                        <input placeholder="Ingresa tu nombre" type="text">
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <div class="input">
+                        <span class="label">Apellido</span>
+                        <input placeholder="Ingresa tu apellido" type="text">
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <div class="input">
+                        <span class="label">Número de celular</span>
+                        <input placeholder="Ingresa tu número de celular" type="text">
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <div class="input">
+                        <span class="label">Correo electrónico</span>
+                        <input placeholder="Ingresa tu correo electrónico" type="text">
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <div class="input">
+                        <span class="label">Contraseña</span>
+                        <input placeholder="Crea tu contraseña" type="password">
+                        <span class="ico icon-ojo"></span>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <div class="list-terminos">
+                        <div class="list-terminos--item">
+                          <span class="ico icon-check"></span>
+                          <span>8 caracteres a más</span>
+                        </div>
+                        <div class="list-terminos--item active">
+                          <span class="ico icon-check"></span>
+                          <span>8 caracteres a más</span>
+                        </div>
+                        <div class="list-terminos--item active">
+                          <span class="ico icon-check"></span>
+                          <span>8 caracteres a más</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <button class="w-100 button--primary text-center">Aceptar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-5">
+          <a class="link-2" data-bs-toggle="modal" data-bs-target="#modalRecoverPassword4">
+            <p class="m-0">RECUPERAR CONTRASEÑA</p>
+          </a>
+          <!-- Modal login-->
+          <div class="modal modal--login fade" id="modalRecoverPassword4" tabindex="-1" aria-labelledby="modalRecoverPassword4Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="modal--login__back">
+                    <a class="link-2" href="">
+                      <span class="icon-chevron-left"></span>
+                      <span>VOLVER</span>
+                    </a>
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="title-modal mb-3">
+                    <img src="./assets/img/phone.png" alt="">
+                    <p>Recupera tu contraseña</p>
+                  </div>
+                  <p>Selecciona un método para restablecer tu contraseña</p>
+                  <form action="">
+                    <div class="mb-5">
+                      <div class="input">
+                        <span class="label">Número de celular</span>
+                        <input placeholder="Escribe tu número de celular" type="text">
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <button class="w-100 button--primary text-center">Continuar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-5">
+          <a class="link-2" data-bs-toggle="modal" data-bs-target="#modalRecoverPassword">
+            <p class="m-0">RECUPERAR CONTRASEÑA 2</p>
+          </a>
+          <!-- Modal login-->
+          <div class="modal modal--login fade" id="modalRecoverPassword" tabindex="-1" aria-labelledby="modalRecoverPasswordLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="title-modal mb-3">
+                    <img src="./assets/img/phone.png" alt="">
+                    <p>Recupera tu contraseña</p>
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Ingresa el código enviado a tu correo electrónico <strong>emilio@tulivery.com.</strong></p>
+                  <form action="">
+                    <div class="mb-5">
+                      <div class="input">
+                        <span class="label">Código de verificación</span>
+                        <input placeholder="Ingresa el código" type="text">
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <button class="w-100 button--primary text-center">Confirmar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-5">
+          <a class="link-2" data-bs-toggle="modal" data-bs-target="#modalRecoverPassword2">
+            <p class="m-0">RECUPERAR CONTRASEÑA 3</p>
+          </a>
+          <!-- Modal login-->
+          <div class="modal modal--login fade" id="modalRecoverPassword2" tabindex="-1" aria-labelledby="modalRecoverPassword2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="title-modal mb-3">
+                    <img src="./assets/img/phone.png" alt="">
+                    <p>Recupera tu contraseña</p>
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Ingresa el código enviado a tu número de celular <strong>947891088.</strong></p>
+                  <form action="">
+                    <div class="mb-5">
+                      <div class="input">
+                        <span class="label">Código de verificación</span>
+                        <input placeholder="Ingresa el código" type="text">
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <button class="w-100 button--primary text-center">Confirmar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-5">
+          <a class="link-2" data-bs-toggle="modal" data-bs-target="#modalRecoverPassword3">
+            <p class="m-0">RECUPERAR CONTRASEÑA 4</p>
+          </a>
+          <!-- Modal login-->
+          <div class="modal modal--login fade" id="modalRecoverPassword3" tabindex="-1" aria-labelledby="modalRecoverPassword3Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="title-modal mb-3">
+                    <img src="./assets/img/phone.png" alt="">
+                    <p>Nueva contraseña</p>
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Crea una nueva contraseña y accede.</p>
+                  <form action="">
+                    <div class="mb-3">
+                      <div class="input">
+                        <span class="label">Contraseña</span>
+                        <input placeholder="Crea tu nueva contraseña" type="password">
+                        <span class="ico icon-ojo"></span>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <div class="input">
+                        <span class="label">Repite tu contraseña</span>
+                        <input placeholder="Crea tu nueva contraseña" type="password">
+                        <span class="ico icon-ojo"></span>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <div class="list-terminos">
+                        <div class="list-terminos--item">
+                          <span class="ico icon-check"></span>
+                          <span>8 caracteres a más</span>
+                        </div>
+                        <div class="list-terminos--item active">
+                          <span class="ico icon-check"></span>
+                          <span>8 caracteres a más</span>
+                        </div>
+                        <div class="list-terminos--item active">
+                          <span class="ico icon-check"></span>
+                          <span>8 caracteres a más</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <button class="w-100 button--primary text-center">Restablecer contraseña</button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
