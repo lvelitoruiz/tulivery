@@ -526,17 +526,35 @@
                     <p>Recupera tu contraseña</p>
                   </div>
                   <p>Selecciona un método para restablecer tu contraseña</p>
-                  <form action="">
-                    <div class="mb-5">
-                      <div class="input">
-                        <span class="label">Número de celular</span>
-                        <input placeholder="Escribe tu número de celular" type="text">
-                      </div>
+                  <div class="d-flex flex-column">
+                    <div class="radio">
+                      <input type="radio" id="f-option" name="selector">
+                      <label for="f-option"><span class="icon-sms pr-2"></span>Recuperar con correo electrónico</label>
+                      <div class="check"></div>
                     </div>
                     <div class="mb-3">
-                      <button class="w-100 button--primary text-center">Continuar</button>
+                      <div class="input disabled">
+                        <span class="label">Correo electrónico</span>
+                        <input disabled placeholder="Ingresa tu correo electrónico" type="text">
+                      </div>
                     </div>
-                  </form>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div class="radio">
+                      <input type="radio" id="s-option" name="selector">
+                      <label for="s-option"><span class="icon-phone pr-2"></span>Recuperar con número de celular</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </div>
+                    <div class="mb-3">
+                      <div class="input">
+                        <span class="label">Celular</span>
+                        <input placeholder="Ingresa número de celular" type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3 mt-4">
+                    <button class="w-100 button--primary text-center">Continuar</button>
+                  </div>
                 </div>
               </div>
             </div>

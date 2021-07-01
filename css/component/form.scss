@@ -29,6 +29,12 @@ textarea {
     margin-bottom: 2px;
   }
 
+  &.disabled {
+    input {
+      background: #F1F4F6;
+    }
+  }
+
   input {
     background: #FFFFFF;
     border: 1px solid #DBE2EB;
@@ -101,4 +107,71 @@ textarea {
 .switch-checkbox:checked + .switch-label:before {
   background-color: white;
   transform: translate(-3px, 2px);
+}
+
+
+.radio {
+  color: #AAAAAA;
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.radio input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.radio label{
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 7px 12px 7px 30px;
+  margin-bottom: 10px;
+  height: 30px;
+  z-index: 9;
+  cursor: pointer;
+  color: #2D3F64;
+}
+
+.radio label span {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.radio .check{
+  display: block;
+  position: absolute;
+  border: 5px solid #DBE2EB;
+  border-radius: 100%;
+  height: 16px;
+  width: 16px;
+  top: 7px;
+  left: 0;
+  z-index: 5;
+}
+
+.radio:hover .check {
+  border: 5px solid #1BD5EA;
+}
+
+.radio .check::before {
+  display: block;
+  position: absolute;
+	content: '';
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  top: 5px;
+	left: 5px;
+  margin: auto;
+	transition: background 0.25s linear;
+	-webkit-transition: background 0.25s linear;
+}
+
+.radio input[type=radio]:checked ~ .check {
+  border: 5px solid #1BD5EA;
 }
