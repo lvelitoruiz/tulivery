@@ -32,25 +32,200 @@
                   </a>
                 </li>
                 <li>
-                  <a class="link-3" data-toggle="modal" data-target="#myModal2">
+                  <a class="link-3" data-bs-toggle="modal" data-bs-target="#modalCarrito">
                     <span class="nro">3</span>
                     <span class="icon-carrito"></span>
                   </a>
                   <!-- Modal -->
-                  <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-                    <div class="modal-dialog" role="document">
+                  <div class="modal modal--shopping fade" id="modalCarrito" tabindex="-1" aria-labelledby="modalCarritoLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                          <h4 class="modal-title" id="myModalLabel2">Right Sidebar</h4>
+                          <div class="title-modal mb-1">
+                            <img src="./assets/img/user.png" alt="">
+                            <p>¡Hola, Emilio!</p>
+                          </div>
+                          <p class="txt">Estos son tus productos de Restaurante Tanta</p>
+                          <button  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                          <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                          </p>
+                          <div class="list--order">
+                            <div class="item">
+                              <div class="item__title">
+                                <span class="ico icon-union"></span>
+                                <span>1/4 Pollo a la brasa con papas y ensalada</span>
+                              </div>
+                              <ul class="item__list">
+                                <li>
+                                  <span class="ico icon-circle"></span>
+                                  <span>1/4 de pollo a la brasa</span>
+                                </li>
+                                <li>
+                                  <span class="ico icon-circle"></span>
+                                  <span>1/4 de pollo a la brasa</span>
+                                </li>
+                                <li>
+                                  <span class="ico icon-circle"></span>
+                                  <span>1/4 de pollo a la brasa</span>
+                                </li>
+                              </ul>
+                              <div class="item__footer">
+                                <div class="button--amount">
+                                  <button>-</button>
+                                  <span>2</span>
+                                  <button>+</button>
+                                </div>
+                                <div class="price">
+                                  <span class="moneda">s/</span>
+                                  <span class="cantidad">24.50</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="item__title">
+                                <span class="ico icon-union"></span>
+                                <span>1/4 Pollo a la brasa con papas y ensalada</span>
+                              </div>
+                              <div class="item__footer">
+                                <div class="button--amount">
+                                  <button>-</button>
+                                  <span>2</span>
+                                  <button>+</button>
+                                </div>
+                                <div class="price">
+                                  <span class="moneda">s/</span>
+                                  <span class="cantidad">24.50</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="item__title">
+                                <span class="ico icon-union"></span>
+                                <span>1/4 Pollo a la brasa con papas y ensalada</span>
+                              </div>
+                              <div class="item__footer">
+                                <div class="button--amount">
+                                  <button>-</button>
+                                  <span>2</span>
+                                  <button>+</button>
+                                </div>
+                                <div class="price">
+                                  <span class="moneda">s/</span>
+                                  <span class="cantidad">24.50</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="item__title">
+                                <span class="ico icon-union"></span>
+                                <span>1/4 Pollo a la brasa con papas y ensalada</span>
+                              </div>
+                              <div class="item__footer">
+                                <div class="button--amount">
+                                  <button>-</button>
+                                  <span>2</span>
+                                  <button>+</button>
+                                </div>
+                                <div class="price">
+                                  <span class="moneda">s/</span>
+                                  <span class="cantidad">24.50</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="item__title">
+                                <span class="ico icon-union"></span>
+                                <span>1/4 Pollo a la brasa con papas y ensalada</span>
+                              </div>
+                              <div class="item__footer">
+                                <div class="button--amount">
+                                  <button>-</button>
+                                  <span>2</span>
+                                  <button>+</button>
+                                </div>
+                                <div class="price">
+                                  <span class="moneda">s/</span>
+                                  <span class="cantidad">24.50</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="item__title">
+                                <span class="ico icon-union"></span>
+                                <span>1/4 Pollo a la brasa con papas y ensalada</span>
+                              </div>
+                              <ul class="item__list">
+                                <li>
+                                  <span class="ico icon-circle"></span>
+                                  <span>1/4 de pollo a la brasa</span>
+                                </li>
+                                <li>
+                                  <span class="ico icon-circle"></span>
+                                  <span>1/4 de pollo a la brasa</span>
+                                </li>
+                                <li>
+                                  <span class="ico icon-circle"></span>
+                                  <span>1/4 de pollo a la brasa</span>
+                                </li>
+                              </ul>
+                              <div class="item__footer">
+                                <div class="button--amount">
+                                  <button>-</button>
+                                  <span>2</span>
+                                  <button>+</button>
+                                </div>
+                                <div class="price">
+                                  <span class="moneda">s/</span>
+                                  <span class="cantidad">24.50</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="item__title">
+                                <span class="ico icon-union"></span>
+                                <span>1/4 Pollo a la brasa con papas y ensalada</span>
+                              </div>
+                              <ul class="item__list">
+                                <li>
+                                  <span class="ico icon-circle"></span>
+                                  <span>1/4 de pollo a la brasa</span>
+                                </li>
+                                <li>
+                                  <span class="ico icon-circle"></span>
+                                  <span>1/4 de pollo a la brasa</span>
+                                </li>
+                                <li>
+                                  <span class="ico icon-circle"></span>
+                                  <span>1/4 de pollo a la brasa</span>
+                                </li>
+                              </ul>
+                              <div class="item__footer">
+                                <div class="button--amount">
+                                  <button>-</button>
+                                  <span>2</span>
+                                  <button>+</button>
+                                </div>
+                                <div class="price">
+                                  <span class="moneda">s/</span>
+                                  <span class="cantidad">24.50</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <div class="total">
+                            <p class="m-0">Subtotal</p>
+                            <div class="price">
+                              <span class="moneda">S/</span>
+                              <span class="cantidad">200.50</span>
+                            </div>
+                          </div>
+                          <button type="button" class="button--orange w-100">Continuar con mi pedido</button>
                         </div>
                       </div>
                     </div>
-                  </div><!-- modal -->
+                  </div>
                 </li>
               </ul>
             </div>

@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-circle:before {
+  content: "\e91e";
+}
+.icon-union:before {
+  content: "\e91f";
+}
 .icon-sms:before {
   content: "\e91c";
 }

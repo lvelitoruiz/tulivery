@@ -99,4 +99,26 @@
       text-align: center;
     }
   }
+
+  &--orange {
+    background-color: #E64F2D ;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+
+    &:hover {
+      color: white;
+      background-color: #9b351e
+      ;
+    }
+  }
 }
