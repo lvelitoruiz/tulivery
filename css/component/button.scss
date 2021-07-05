@@ -117,8 +117,53 @@
 
     &:hover {
       color: white;
-      background-color: #9b351e
-      ;
+      background-color: #9b351e;
     }
   }
+}
+
+.btn-group {
+  flex-wrap: wrap;
+
+  &--item {
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+}
+
+.btn-outline-primary {
+  background: #F1F4F6;
+  border-radius: 32px;
+  font-size: 14px;
+  color: #8592AC;
+  padding: 8px 10px;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    color: white;
+    background: #1BD5EA;
+  }
+}
+
+.btn-check:active+.btn-outline-primary, 
+.btn-check:checked+.btn-outline-primary, 
+.btn-outline-primary.active, 
+.btn-outline-primary.dropdown-toggle.show, 
+.btn-outline-primary:active {
+  color: white;
+  background: #1BD5EA;
+}
+
+.btn-check:active+.btn-outline-primary:focus, 
+.btn-check:checked+.btn-outline-primary:focus, 
+.btn-outline-primary.active:focus, 
+.btn-outline-primary.dropdown-toggle.show:focus, 
+.btn-outline-primary:active:focus {
+  box-shadow: none;
+}
+
+.btn-check:focus+.btn-outline-primary, 
+.btn-outline-primary:focus {
+  box-shadow: none; 
 }

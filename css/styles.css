@@ -22,6 +22,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-search:before {
+  content: "";
+}
+
 .icon-circle:before {
   content: "";
 }
@@ -272,6 +276,24 @@
   color: #36557F;
 }
 
+@media (min-width: 992px) {
+  .stores--filter {
+    padding-left: 30px;
+  }
+}
+.stores--filter .title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #2D3F64;
+  margin-bottom: 15px;
+}
+.stores--filter .bb-botton {
+  border-bottom: 1px solid #DBE2EB;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
 .stores--categories {
   align-items: center;
   display: flex;
@@ -325,13 +347,18 @@
   object-fit: cover;
   border-radius: 6px;
 }
+@media (min-width: 992px) {
+  .stores--item__banner {
+    height: 200px;
+  }
+}
 .stores--item__logo {
   border-radius: 50%;
   border: 4px solid white;
   height: 48px;
   left: 9px;
   position: absolute;
-  top: 142px;
+  bottom: 60px;
   width: 48px;
 }
 .stores--item .info {
@@ -753,6 +780,50 @@
 .button--orange:hover {
   color: white;
   background-color: #9b351e;
+}
+
+.btn-group {
+  flex-wrap: wrap;
+}
+.btn-group--item {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.btn-outline-primary {
+  background: #F1F4F6;
+  border-radius: 32px;
+  font-size: 14px;
+  color: #8592AC;
+  padding: 8px 10px;
+  cursor: pointer;
+  border: none;
+}
+.btn-outline-primary:hover {
+  color: white;
+  background: #1BD5EA;
+}
+
+.btn-check:active + .btn-outline-primary,
+.btn-check:checked + .btn-outline-primary,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show,
+.btn-outline-primary:active {
+  color: white;
+  background: #1BD5EA;
+}
+
+.btn-check:active + .btn-outline-primary:focus,
+.btn-check:checked + .btn-outline-primary:focus,
+.btn-outline-primary.active:focus,
+.btn-outline-primary.dropdown-toggle.show:focus,
+.btn-outline-primary:active:focus {
+  box-shadow: none;
+}
+
+.btn-check:focus + .btn-outline-primary,
+.btn-outline-primary:focus {
+  box-shadow: none;
 }
 
 .list-products .item {
@@ -1681,6 +1752,57 @@ input.radiobutton:checked + label.radiobutton-label:after {
 .modal--shopping .modal-body .list--order .item__footer .price .cantidad {
   font-size: 18px;
   font-weight: 600;
+}
+
+.search {
+  align-items: center;
+  background: white;
+  border: 1px solid #DBE2EB;
+  display: flex;
+  height: 44px;
+  padding: 4px;
+  padding-left: 12px;
+}
+.search input {
+  border: none;
+  font-size: 14px;
+  height: 100%;
+  width: 100%;
+}
+.search input:focus {
+  outline: none;
+}
+.search input::placeholder {
+  font-size: 14px;
+  color: #8592AC;
+  font-weight: 300;
+}
+.search .dis {
+  align-items: center;
+  border-left: 1px solid #DBE2EB;
+  display: flex;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+.search .dis span {
+  color: #8592AC;
+  font-size: 20px;
+  padding-right: 5px;
+}
+.search .dis input {
+  min-width: 150px;
+}
+.search button {
+  align-items: center;
+  background: #1BD5EA;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  display: flex;
+  font-size: 22px;
+  justify-content: center;
+  min-height: 36px;
+  min-width: 36px;
 }
 
 html {
