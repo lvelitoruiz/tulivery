@@ -1,0 +1,136 @@
+.catalogue {
+  &--banner {
+    height: 240px;
+    position: relative;
+
+    &__primary {
+      border-radius: 6px;
+      height: 240px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    &__logo {
+      border-radius: 50%;
+      border: 8px solid white;
+      height: 100px;
+      left: 9px;
+      position: absolute;
+      bottom: -50px;
+      width: 100px;
+    }
+  }
+
+  &--info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    h3 {
+      color: #2D3F64;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .detail {
+      display: flex;
+      align-items: center;
+
+      .open {
+        display: flex;
+        align-items: center;
+        color: #27AE60;
+
+        p {
+          margin: 0;
+          padding-left: 5px;
+          font-size: 12px;
+        }
+      }
+
+      .close {
+        display: flex;
+        align-items: center;
+        color: #8592AC;
+
+        p {
+          margin: 0;
+          padding-left: 5px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .calendar {
+      display: flex;
+      align-items: center;
+      color: #8592AC;
+      padding-left: 20px;
+      
+      p {
+        margin: 0;
+        padding-left: 5px;
+        font-size: 12px;
+      }
+    }
+
+    .options {
+      display: flex;
+      align-items: center;
+      
+      .item {
+        border: 1px solid #DBE2EB;
+        padding: 8px 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #8592AC;
+        font-size: 14px;
+        margin-right: 15px;
+
+        p {
+          margin: 0;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+
+        .ico {
+          font-size: 20px;
+        }
+
+        .ico-2 {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .btn-group {
+    overflow: scroll;
+    padding-bottom: 20px;
+    width: 100%;
+    flex-wrap: initial;
+
+    .btn-outline-primary {
+      white-space: nowrap;
+      border-radius: 32px;
+      font-size: 14px;
+      color: #8592AC;
+      padding: 8px 10px;
+      cursor: pointer;
+      border: 1px solid #1BD5EA;
+      background: transparent;
+    }
+
+    .btn-check:active + .btn-outline-primary, 
+    .btn-check:checked + .btn-outline-primary, 
+    .btn-outline-primary.active, 
+    .btn-outline-primary.dropdown-toggle.show, 
+    .btn-outline-primary:active {
+      color: white;
+      background: #1BD5EA;
+      border: 1px solid #1BD5EA;
+    }
+  }
+}
