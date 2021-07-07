@@ -172,7 +172,12 @@
             <div class="row">
               <div class="col-md-6 col-lg-4">
                 <div class="stores--item">
-                  <img class="stores--item__banner" src="./assets/img/item-1.jpeg" alt="">
+                  <!-- <img class="stores--item__banner" src="./assets/img/item-1.jpeg" alt=""> -->
+                  <div class="my-slider stores--item__banner">
+                    <div class="stores--item__banner_slide"><img class="stores--item__banner_img" src="./assets/img/item-1.jpeg" alt=""></div>
+                    <div class="stores--item__banner_slide"><img class="stores--item__banner_img" src="./assets/img/item-2.jpeg" alt=""></div>
+                    <div class="stores--item__banner_slide"><img class="stores--item__banner_img" src="./assets/img/item-3.jpeg" alt=""></div>
+                  </div>
                   <img class="stores--item__logo" src="./assets/img/logo-item-1.png" alt="">
                   <div class="info">
                     <span class="arrow icon-arrow-right"></span>
@@ -361,20 +366,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script type="module">
-      var slider = tns({
-        container: '.my-slider',
-        items: 1,
-        mode: 'gallery',
-        "autoplay": true,
-        "autoplayTimeout": 2000,
-        swipeAngle: false,
-        speed: 800,
-        controls: false,
-        nav: false,
-        autoplayButton: false,
-        navContainer: false,
-        autoplayButtonOutput: false
-      });
+      const tnsCarousel = document.querySelectorAll('.my-slider');
+      tnsCarousel.forEach(slider => {
+        const tnsSlider = tns({
+          container: slider,
+          items: 1,
+          mode: 'gallery',
+          "autoplay": true,
+          "autoplayTimeout": 2000,
+          swipeAngle: false,
+          speed: 800,
+          controls: false,
+          nav: false,
+          autoplayButton: false,
+          navContainer: false,
+          autoplayButtonOutput: false
+          });
+        });
+      // var slider = tns({
+      //   container: '.my-slider',
+      //   items: 1,
+      //   mode: 'gallery',
+      //   "autoplay": true,
+      //   "autoplayTimeout": 2000,
+      //   swipeAngle: false,
+      //   speed: 800,
+      //   controls: false,
+      //   nav: false,
+      //   autoplayButton: false,
+      //   navContainer: false,
+      //   autoplayButtonOutput: false
+      // });
       </script>
   </body>
 </html>
