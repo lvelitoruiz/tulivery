@@ -60,3 +60,22 @@ body {
 .text-right {
   text-align: right;
 }
+
+.stores--item__banner_slide{
+  height: 200px;
+  width: 100%;
+  position: relative;
+}
+
+.stores--item__banner_img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+
+@media (min-width: 1420px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1420px;
+  }
+}
